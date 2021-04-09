@@ -1,0 +1,20 @@
+---
+title: "La Soufriere Saint-Vincent"
+author: "Olivier Gillet"
+date: "09/04/2021"
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Chronologie crise
+
+## Facebook, Twitter, autres réseaux sociaux
+
+## Journaux, télévision, autres médias
+
+## Autres sources de scrapping (Trafic maritime, aérien, routier)
+
+
