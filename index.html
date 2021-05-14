@@ -1,15 +1,23 @@
-<div id="map-title">Eruption de la Sourfrière, Saint-Vincent et les Grenadines</div>
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+ integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+ crossorigin=""/>
 
-var map = L.map('map', {
-  center: [41.77, -72.69], // EDIT coordinates to re-center map
-  zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
-  scrollWheelZoom: false,
-  tap: false
-});
+<div id="mapid">Eruption de la Sourfrière, Saint-Vincent et les Grenadines</div>
 
- L.tileLayer(
-   'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-     attribution: '&copy; <a href="https://osm.org/copyright">\
-      OpenStreetMap</a> contributors, &copy;\
-        <a href="https://carto.com/attribution">CARTO</a>'
- }).addTo(map);
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+ integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+ crossorigin="">
+  var map = L.map('map', {
+    center: [41.77, -72.69], // EDIT coordinates to re-center map
+    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    scrollWheelZoom: false,
+    tap: false
+  });
+
+   L.tileLayer(
+     'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+       attribution: '&copy; <a href="https://osm.org/copyright">\
+        OpenStreetMap</a> contributors, &copy;\
+          <a href="https://carto.com/attribution">CARTO</a>'
+   }).addTo(map);
+</script>
