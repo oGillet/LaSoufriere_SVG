@@ -1,1 +1,15 @@
 <div id="map-title">Eruption de la Sourfrière, Saint-Vincent et les Grenadines</div>
+
+var map = L.map('map', {
+  center: [41.77, -72.69], // EDIT coordinates to re-center map
+  zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+  scrollWheelZoom: false,
+  tap: false
+});
+
+ L.tileLayer(
+   'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+     attribution: '&copy; <a href="https://osm.org/copyright">\
+      OpenStreetMap</a> contributors, &copy;\
+        <a href="https://carto.com/attribution">CARTO</a>'
+ }).addTo(map);
